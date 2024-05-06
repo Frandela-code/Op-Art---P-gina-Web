@@ -1,0 +1,971 @@
+/* TIPOGRÁFICAS */
+
+@font-face {
+    font-family: 'Signika';
+    src: url(/Fonts/Signika-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+h1{
+    font-family: 'Signika';
+    font-weight: bold;
+    text-decoration: none
+}
+
+
+@font-face {
+    font-family: 'Signika';
+    src: url(/Fonts/Signika-SemiBold.ttf);
+    font-weight: 500;
+    font-style: 500;
+    text-decoration: none
+}
+
+h2{
+    font-family: 'Signika';
+    font-weight: 500;
+    text-decoration: none
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url(/Fonts/Signika-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+a{
+    font-family: 'Signika';
+    font-weight: normal;
+    text-decoration: none
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url(/Fonts/Signika-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none
+}
+
+p{
+    font-family: 'Signika';
+    font-weight: normal;
+    text-decoration: none
+}
+
+
+/* BARRA DE NAVEGACIÓN (NAV) */
+* {
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+    font-family:'Signika';
+    text-decoration: none
+}
+
+header {
+    display: flex; /* Define el contenedor como un flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    padding: 10px 20px; /* Relleno */
+    background-color: #DDE1E6; /* Color de fondo del rectángulo */
+}
+
+.marca {
+    display: flex; /* Define el contenedor como un flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+}
+
+.logo {
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Margen a la derecha */
+}
+
+.texto-opart {
+    font-size: 80px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    color: rgb(0, 0, 0); /* Color del texto */
+    margin-bottom: 0; /* Elimina el margen inferior */
+    transition: font-size 0.3s, color 0.3s; /* Transición para suavizar el cambio de tamaño de fuente y color */
+}
+
+.texto-opart:hover {
+    font-size: 90px; /* Tamaño de fuente al hacer hover */
+    color: #697077; /* Color del texto al hacer hover */
+}
+
+.marca a {
+    display: flex; /* Define el enlace como un flexbox */
+    align-items: center; /* Alinea los elementos del enlace verticalmente en el centro */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.marca a h1 {
+    align-self: center; /* Centra verticalmente el texto "Op Art" */
+}
+
+
+.marca-link {
+    display: inline; /* Hace que el enlace y sus elementos hijos estén en la misma línea */
+}
+
+
+/* CONTROLA TODAS LAS SECCIONES DEL NAV JUNTAS */
+.main-nav {
+    margin-left: auto; /* Mueve todo el <nav> hacia la derecha */
+    background-color: #DDE1E6; /* Color de fondo del rectángulo */
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+/* CONTROLA ESPECÍFICAMENTE A CADA UNA DE LAS SECCIONES POR SEPARADO */
+.main-nav li {
+    padding: 10px 20px;
+    position: relative;
+
+    transition: background-color 0.3s ease;
+}
+
+.main-nav li:hover {
+    background-color: #A9A9A9; /* Color de fondo al hacer hover */
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.dropdown-content {
+    display: none; /* Oculta el contenido del desplegable por defecto */
+    position: absolute; /* Posición absoluta */
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1; /* Índice z para superponer sobre otros elementos */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Muestra el contenido del desplegable cuando se pasa el ratón por encima */
+}
+
+
+
+
+/* BARRA DE BUSQUEDA */
+
+.search-area {
+    margin-left: auto; /* Margen izquierdo automático para alinear a la derecha */
+    display: flex; /* Define el contenedor como un flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+}
+
+.search-area input {
+    padding: 10px; /* Relleno */
+    margin-right: 10px; /* Margen derecho */
+    border: none; /* Sin borde */
+    background-color: #f2f2f2; /* Color de fondo */
+}
+
+.dropbtn {
+    background-color: #f2f2f2; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Relleno */
+    cursor: pointer; /* Cursor de apuntar */
+}
+
+.dropdown {
+    position: relative; /* Posición relativa */
+    display: inline-block; /* Se muestra como un bloque en línea */
+}
+
+.dropdown-content a {
+    color: black; /* Color del texto del desplegable */
+    padding: 12px 16px; /* Relleno */
+    text-decoration: none; /* Sin decoración de texto */
+    display: block; /* Se muestra como un bloque */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón por encima */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION DE "ARTISTAS" */
+
+
+/* TÍTULO "ARTISTAS" */
+.título-artistas {
+    font-size: 28px; /* Tamaño de fuente del título */
+    padding: 20px; /* Espaciado interno */
+    color: #000000; /* Color del texto */
+    font-size: 60px;
+    margin-left: 170px;
+    margin-top: 30px;
+}
+
+.título-artistas2 {
+    font-size: 28px; /* Tamaño de fuente del título */
+    padding: 20px; /* Espaciado interno */
+    color: #000000; /* Color del texto */
+    font-size: 60px;
+}
+
+/* Estilos para la sección de artistas */
+.artistas {
+    display: flex; /* Utiliza flexbox para organizar los artistas en una fila */
+    flex-wrap: wrap; /* Permite que los artistas se envuelvan a la siguiente línea si no hay suficiente espacio */
+    justify-content: space-around; /* Distribuye uniformemente los artistas a lo largo del contenedor */
+    padding: 20px; /* Añade espacio alrededor de los artistas */
+    margin-top: 20px;
+}
+
+
+
+
+/* CONTENEDOR DE LOS TRES ELEMENTOS (H2, IMAGEN Y PÁRRAFO) */
+.artista {
+    flex-basis: calc(50% - 30px); /* Establece el tamaño base de cada artista al 33.33% del contenedor, menos el espacio entre ellos */
+    margin-bottom: 20px; /* Añade espacio entre los artistas */
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    width: 600px; /* Define un ancho específico o en porcentaje, dependiendo del diseño */
+    transition: transform 0.3s ease;
+}
+
+.artista img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+}
+
+
+
+
+/* ESPACIO DEBAJO DE "ARTISTA" */
+.artista h2 {
+    margin-bottom: 10px; /* Añade espacio debajo del título del artista */
+    font-size: 40px; 
+    font-weight: bold;
+    margin-top: 50px;
+    text-decoration: none !important; /* Elimina el subrayado */
+    color: black; /* Cambia el color del texto */
+}
+
+
+
+
+/* CONTROLA TODAS LAS IMÁGENES */
+.artista img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-height: 400px; /* Limita la altura máxima para mantener la uniformidad */
+}
+
+
+/* CADA UNA DE LAS IMAGENES EN ESPECÍFICO */
+.artista .bridget-riley {
+    width: 600px;
+    height: 409px;
+}
+.artista .julio-le-parc {
+ width: 600px;
+    height: 409px;
+}
+.artista .victor-vasarely {
+    width: 600px;
+    height: 409px;
+}
+.artista .richard-anuszkiewicz {
+    width: 600px;
+    height: 409px;
+}
+.artista .carlos-cruz-diez {
+    width: 600px;
+    height: 409px;
+}
+
+/* EFECTO DE BRILLO EN LAS IMAGENES */
+.artista:hover { /* Efecto de bajo brillo */
+    filter: brightness(40%);
+}
+
+
+
+
+/* PÁRRAFO DE DESCRIPCIÓN DE LAS IMAGENES */
+.artista p {
+    text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
+    word-wrap: break-word; /* Asegura que las palabras no se corten de forma inapropiada */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; /* Establece el ancho máximo igual al ancho de las imágenes */
+    text-decoration: none !important; /* Elimina el subrayado */
+    color: black; /* Cambia el color del texto */
+}
+
+
+
+
+
+
+
+
+
+/* SUB-SECCIONES DE "ARTISTAS" */
+.container1 {
+    display: flex;
+    align-items: center;
+}
+
+.texto1 {
+    flex: 1;
+    padding: 20px;
+}
+
+.imagen-leparc {
+    flex: 1;
+    padding: 20px;
+}
+
+.imagen-leparc img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Bridget-Riley {
+    width: 800px;
+    height: 800px;
+}
+
+.victor-vasarely {
+    width: 800px;
+    height: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION DE "CONTACTO" */
+
+
+/* TÍTULO "CONTACTO" */
+
+
+.titulo-contacto {
+    font-size: 60px; /* Tamaño de fuente del título */
+    color: #000000; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+
+
+
+
+
+
+
+
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contacto-info {
+    width: 45%;
+margin-left: 300px;
+}
+
+.contacto-info h2 {
+    margin-bottom: 20px;
+
+}
+
+.formulario {
+    width: 70%;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* BOTON DE "Enviar" */
+button[type="submit"] {
+    width: 50%; 
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #697077;
+}
+
+::placeholder {
+    color: #999; /* Color del texto del placeholder */
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent; /* Hace que el placeholder sea transparente cuando el campo está enfocado */
+}
+
+
+.image-row {
+    display: flex; /* Usa flexbox para organizar las imágenes en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre las imágenes */
+}
+
+.image-container {
+    flex: 1; /* Hace que cada contenedor de imagen ocupe el mismo espacio */
+    margin-right: -320px; /* Espacio reducido entre las imágenes */
+    margin-top: 30px;
+}
+
+.image-container:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último contenedor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION DE "MUSEO" */
+
+
+
+/* TÍTULO "Museos" */
+.titulo-museos {
+    font-size: 28px; /* Tamaño de fuente del título */
+    padding: 20px; /* Espaciado interno */
+    color: #000000; /* Color del texto */
+    font-size: 60px;
+    margin-left: 170px;
+}
+
+
+
+
+.video-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 800px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* SECCION DE "INICIO" */
+
+/* FONDO */
+.fondo-gif-inicio{
+    background-image: url('Img/3EQO.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.introduction-container {
+    display: flex;
+    align-items: center;
+}
+
+.título-opart {
+    font-size: 200px;
+    color: #fff;
+    margin-right: 300px; /* Ajusta el margen derecho según sea necesario */
+    margin-left: -200px;
+}
+
+.título-introducción {
+    font-size: 70px;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.texto-introducción {
+    font-size: 20px;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.introduction-text-container {
+    margin-left: -500px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+
+
+.carousel {
+    display: flex;
+    align-items: center;
+    flex-basis: 75%; /* Ajusta esto según el espacio disponible */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea horizontalmente al inicio (izquierda) */
+    justify-content: center; /* Centra verticalmente */
+    height: 100vh; /* Usa el 100% de la altura de la ventana del navegador */
+}
+
+/* CONTROLA EL CARRUSEL ENTERO */
+.carousel-container {
+    position: relative;
+    transform: translateX(-50%);
+    left: 120px;
+}
+
+
+/* CONTROLA LAS IMAGENES */
+.carousel-images img {
+    width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    display: block; /* Asegúrate de que las imágenes no estén en línea */
+}
+
+
+/* FLECHAS */
+.carousel-left-outer, .carousel-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente las flechas */
+}
+
+/* FLECHA IZQUIERDA */
+.carousel-left-outer {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 1050px;
+    z-index: 1; /* Asegura que la flecha esté por encima de cualquier otro contenido */
+    top: 670px
+}
+
+
+/* FLECHA DERECHA */
+.carousel-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -55px;
+    z-index: 1; /* Asegura que la flecha esté por encima de cualquier otro contenido */
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+/* Oculta todas las imágenes excepto la primera */
+.carousel-images img:not(:first-child) {
+    display: none;
+}
+
+
+
+
+
+
+
+/* SECCION DE "IMAGENES RELEVANTES" */
+.imagen-relevante {
+    position: relative; /* Hace que el contenedor sea relativo */
+    background-color: #ffffff; /* Fondo blanco */
+    padding-top: 30px; /* Espacio superior */
+}
+
+.imagen-container {
+    position: relative; /* Hace que el contenedor sea relativo */
+    width: 100%; /* Ancho completo */
+    max-width: 100%; /* Ancho máximo */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    margin-top: -10px
+}
+
+.imagen-relevante img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.titulo-imagen {
+    position: absolute; /* Hace que el título sea absoluto */
+    top: 50px; /* Distancia desde la parte superior */
+    left: 80px; /* Distancia desde la izquierda */
+    z-index: 1; /* Asegura que esté sobre la imagen */
+    color: white; /* Color del texto */
+    font-size: 100px; /* Tamaño del texto */
+}
+
+.texto-relevante {
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.titulo-columna{
+    padding-left: 30px;
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-size: 35px; /* Tamaño del texto */
+}
+
+
+
+
+/* COLUMNAS */
+.texto-relevante .texto-container {
+    display: flex;
+}
+
+.texto-relevante .texto-columna {
+    flex: 1; /* Distribuye el espacio disponible por igual */
+    padding: 10px; /* Añade algo de espacio entre las columnas */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION DE "OBRAS DESTACADAS" */
+/* TÍTULO "OBRAS DESTACADAS" */
+.titulo-obras-destacadas {
+    font-size: 28px; /* Tamaño de fuente del título */
+    padding: 20px; /* Espaciado interno */
+    color: #000000; /* Color del texto */
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+
+
+
+.carousel-container2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ajusta el ancho del contenedor del carrusel */
+    padding: 50px;
+}
+
+.carousel-images2 {
+    display: flex;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%); /* Mueve el carrusel hacia la izquierda para ocultar las imágenes iniciales */
+}
+
+.carousel-item2 {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.carousel-item2 img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: 500px;
+}
+
+.image-description2 {
+    text-align: left;
+    font-size: 24px;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.título-descripción{
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.prev2,
+.next2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo de las flechas */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.prev2 {
+    left: 0;
+}
+
+.next2 {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/* MARCA ENTERA */
+
+.footer-logo {
+    display: flex; /* Define el contenedor como un flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+}
+
+.logo2 {
+    width: 150px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.texto-opart2 {
+    font-size: 80px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    color: rgb(255, 255, 255); /* Color del texto */
+    margin-bottom: 0; /* Elimina el margen inferior */
+    transition: font-size 0.3s, color 0.3s; /* Transición para suavizar el cambio de tamaño de fuente y color */
+}
+
+.texto-opart2:hover {
+    font-size: 90px; /* Tamaño de fuente al hacer hover */
+    color: #697077; /* Color del texto al hacer hover */
+}
+
+
+.footer-logo a {
+    display: flex; /* Define el enlace como un flexbox */
+    align-items: center; /* Alinea los elementos del enlace verticalmente en el centro */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.footer-logo a h1 {
+    align-self: center; /* Centra verticalmente el texto "Op Art" */
+}
+
+
+.footer-logo-link {
+    display: inline; /* Hace que el enlace y sus elementos hijos estén en la misma línea */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos de los enlaces */
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición para suavizar el cambio de color */
+}
+
+/* Efecto de hover */
+.footer-links ul li a:hover {
+    color: #697077; /* Cambia el color al hacer hover */
+}
+
+
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+
+
+
